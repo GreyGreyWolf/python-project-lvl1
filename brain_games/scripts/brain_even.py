@@ -1,4 +1,4 @@
-from brain_games.Questions import salute, qst
+from brain_games.Questions import qst
 
 
 if __name__ == '__main__':
