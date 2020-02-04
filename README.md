@@ -4,13 +4,4 @@
 
 [![Build Status](https://travis-ci.com/GreyGreyWolf/python-project-lvl1.svg?branch=master)](https://travis-ci.com/GreyGreyWolf/python-project-lvl1)
 
-<html>
-<head>
-  <link rel="stylesheet" type="text/css" href="/asciinema-player.css" />
-</head>
-<body>
-  <asciinema-player src="/297782.cast" cols="80" rows="24"></asciinema-player>
-  ...
-  <script src="/asciinema-player.js"></script>
-</body>
-</html>
+[![asciicast](https://asciinema.org/a/eiSwxssCokxSJ3vcFlI1U3Lcz.svg)](https://asciinema.org/a/eiSwxssCokxSJ3vcFlI1U3Lcz)
