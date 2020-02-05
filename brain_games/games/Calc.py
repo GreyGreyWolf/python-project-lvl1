@@ -10,8 +10,6 @@ def clc(name):
         random_opr = random.choice(['mul', 'add', 'sub'])
         if random_opr == 'mul':
             print('\nQuestion: ', str(num1) + ' * ' + str(num2) )
-            #print('\nYour answer: ')
-            #ans = input()
             ans = prompt._prompt_input ('\nYour answer: ')
             result = num1*num2
             if  ans == result:
