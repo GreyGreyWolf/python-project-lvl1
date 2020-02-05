@@ -1,14 +1,14 @@
-from brain_games.games.Questions import qst
+from brain_games.games.Calc import clc
 import prompt
+
 
 def main():
     print('Welcome to the Brain Games!')
-    print('Answer "yes" if number even otherwise answer "no"')
+    print('What is the result of the expression?')
     name = prompt.string('\n\nMay I have your name? ')
     print('Hello, ' + name + ' !')
-    qst(name)
+    clc(name)
 
 
 if __name__ == '__main__':
 	main()
-        

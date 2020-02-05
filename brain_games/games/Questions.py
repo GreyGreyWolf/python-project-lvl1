@@ -2,11 +2,7 @@ import random, prompt
 from sys import exit
 
 
-def qst():
-    print('Welcome to the Brain Games!')
-    print('Answer "yes" if number even otherwise answer "no"')
-    name = prompt.string('\n\nMay I have your name? ')
-    print('Hello, ' + name + ' !')
+def qst(name):
     i = 0
     while i < 3:
         num =  random.randint(1,50)
