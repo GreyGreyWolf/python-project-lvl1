@@ -1,17 +1,19 @@
 [tool.poetry]
-name = "GreyWolf_brain_games"
+name = "GreyWolf_Brain_Games"
 version = "0.1.4"
-authors = ["Your Name <you@example.com>"]
+description = ""
+authors = ["GreyGreyWolf <wolfdieattheend@yandex.ru>"]
 packages = [
   { include = "brain_games" },
 ]
 
+
 [tool.poetry.dependencies]
 python = "^3.7.3"
 prompt = "^0.4.1"
-flake8 = "^3.7.9"
 
 [tool.poetry.dev-dependencies]
+flake8 = "^3.7.9"
 
 [tool.poetry.scripts]
 brain-even = "brain_games.scripts.brain_even:qst"
