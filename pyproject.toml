@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "GreyWolf_Brain_Games"
-version = "0.1.4"
+version = "0.1.4.1"
 description = ""
 authors = ["GreyGreyWolf <wolfdieattheend@yandex.ru>"]
 packages = [
@@ -16,7 +16,8 @@ prompt = "^0.4.1"
 flake8 = "^3.7.9"
 
 [tool.poetry.scripts]
-brain-even = "brain_games.scripts.brain_even:qst"
+brain-even = "brain_games.scripts.brain_even:main"
+brain-calc = "brain_games.scripts.brain_calc:main"
 
 
 [build-system]
