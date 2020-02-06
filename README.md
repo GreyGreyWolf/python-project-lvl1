@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.com/GreyGreyWolf/python-project-lvl1.svg?branch=master)](https://travis-ci.com/GreyGreyWolf/python-project-lvl1)
 
  <p align = "left"> - Brain_even</p>
-[![asciicast](https://asciinema.org/a/eiSwxssCokxSJ3vcFlI1U3Lcz.svg)](https://asciinema.org/a/eiSwxssCokxSJ3vcFlI1U3Lcz)
+<a href="https://asciinema.org/a/eiSwxssCokxSJ3vcFlI1U3Lcz" target="_blank"><img src="https://asciinema.org/a/eiSwxssCokxSJ3vcFlI1U3Lcz.svg" /></a>
 
  <p align = "left"> - Brain_calc</p>
 <a href="https://asciinema.org/a/PNm1ydqSOzEzWKmRMAFsMEAVA" target="_blank"><img src="https://asciinema.org/a/PNm1ydqSOzEzWKmRMAFsMEAVA.svg" /></a>
