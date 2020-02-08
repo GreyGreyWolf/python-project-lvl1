@@ -15,3 +15,6 @@
 
  <p align = "left"> - Brain_progression</p>
 <a href="https://asciinema.org/a/dErww27KlHjw4s5FXkirhZvQH" target="_blank"><img src="https://asciinema.org/a/dErww27KlHjw4s5FXkirhZvQH.svg" /></a>
+
+ <p align = "left"> - Brain_prime</p>
+<a href="https://asciinema.org/a/J8zv0FSNU4cwzJfwEzkXraUUR" target="_blank"><img src="https://asciinema.org/a/J8zv0FSNU4cwzJfwEzkXraUUR.svg" /></a>
