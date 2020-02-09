@@ -1,12 +1,15 @@
 [tool.poetry]
 name = "GreyWolf_Brain_Games"
-version = "0.1.4.4"
-description = ""
+version = "0.1.6"
+description = "Simple Game"
 authors = ["GreyGreyWolf <wolfdieattheend@yandex.ru>"]
 packages = [
   { include = "brain_games" },
 ]
 
+[[tool.poetry.source]]
+name =  'private' 
+url = 'https://github.com/GreyGreyWolf/python-project-lvl1'
 
 [tool.poetry.dependencies]
 python = "^3.7.3"

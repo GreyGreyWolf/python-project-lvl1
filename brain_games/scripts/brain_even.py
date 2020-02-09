@@ -1,14 +1,12 @@
-from brain_games.games.Questions import qst_even
-import prompt
+from brain_games import games, engine
+from brain_games.games import Questions
+
 
 def main():
-    print('Welcome to the Brain Games!')
-    print('Answer "YES" if number even otherwise answer "NO"')
-    name = prompt.string('\n\nMay I have your name? ')
-    print('Hello, ' + name + ' !')
-    qst_even(name)
+    engine.engine(games.Questions)
 
 
 if __name__ == '__main__':
 	main()
+        
         

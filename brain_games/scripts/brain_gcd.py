@@ -1,13 +1,9 @@
-from brain_games.games.Gcd import nod_num
-import prompt
+from brain_games import games, engine
+from brain_games.games import Gcd
 
 
 def main():
-    print('Welcome to the Brain Games!')
-    print('Find the greatest common divisor of given numbers')
-    name = prompt.string('\n\nMay I have your name? ')
-    print('Hello, ' + name + ' !')
-    nod_num(name)
+    engine.engine(games.Gcd)
 
 
 if __name__ == '__main__':

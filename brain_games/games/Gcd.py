@@ -1,21 +1,15 @@
-import random, prompt
+import random
 from fractions import gcd
-from sys import exit
 
+task = 'Find the greatest common divisor of given numbers.'
 
-def nod_num(name):
-    i = 0
-    while i < 3:
-        num1 = random.randint(1,50)
-        num2 = random.randint(1,50)
-        print('\nQuestion: ', str(num1) + ' AND ' + str(num2))
-        ans = prompt.string('\nYour answer: ')
-        result = gcd(num1, num2)
-        if  (ans == str(result)):
-            print('Correct!')
-            i += 1
-        else:
-            print("\n" + ans.upper() + " <--- is wrong answer ;(. Correct answer was " + str(result) + "\nLet's try again," + name + "!")
-            exit()
-    if i == 3:
-        print('Congratulations, ' + name + '!')
+def nod_num(num1, num2):
+    res = gcd(num1, num2)
+    return res
+
+def gen():
+    num1 = random.randint(1,50)
+    num2 = random.randint(1,50)
+    escn_qst = '{} AND {}'.format(num1, num2)
+    ans = str(nod_num(num1, num2))
+    return escn_qst, ans

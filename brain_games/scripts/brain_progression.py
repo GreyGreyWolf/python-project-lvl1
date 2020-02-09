@@ -1,14 +1,10 @@
-from brain_games.games.Progression import prg_num
-import prompt
-
+from brain_games import games, engine
+from brain_games.games import Progression
 
 def main():
-    print('Welcome to the Brain Games!')
-    print('What number is missing in the progression?')
-    name = prompt.string('\n\nMay I have your name? ')
-    print('Hello, ' + name + ' !')
-    prg_num(name)
+    engine.engine(games.Progression)
 
 
 if __name__ == '__main__':
 	main()
+        

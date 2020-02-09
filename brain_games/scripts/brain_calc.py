@@ -1,13 +1,8 @@
-from brain_games.games.Calc import clc_expr
-import prompt
-
+from brain_games import games, engine
+from brain_games.games import Calc
 
 def main():
-    print('Welcome to the Brain Games!')
-    print('What is the result of the expression?')
-    name = prompt.string('\n\nMay I have your name? ')
-    print('Hello, ' + name + ' !')
-    clc_expr(name)
+    engine.engine(games.Calc)
 
 
 if __name__ == '__main__':

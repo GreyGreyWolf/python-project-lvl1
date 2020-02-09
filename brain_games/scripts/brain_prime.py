@@ -1,13 +1,8 @@
-from brain_games.games.Prime import prm_num
-import prompt
-
+from brain_games import games, engine
+from brain_games.games import Prime
 
 def main():
-    print('Welcome to the Brain Games!')
-    print('Answer "YES" if given number is prime. Otherwise answer "NO".')
-    name = prompt.string('\n\nMay I have your name? ')
-    print('Hello, ' + name + ' !')
-    prm_num(name)
+    engine.engine(games.Prime)
 
 
 if __name__ == '__main__':
