@@ -1,4 +1,4 @@
-from brain_games.games.Calc import clc
+from brain_games.games.Calc import clc_expr
 import prompt
 
 
@@ -7,7 +7,7 @@ def main():
     print('What is the result of the expression?')
     name = prompt.string('\n\nMay I have your name? ')
     print('Hello, ' + name + ' !')
-    clc(name)
+    clc_expr(name)
 
 
 if __name__ == '__main__':

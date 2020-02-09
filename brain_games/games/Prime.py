@@ -2,7 +2,7 @@ import random, prompt
 from sys import exit
 
 
-def prm(name):
+def prm_num(name):
     i = 0
     while i < 3:
         n = random.randint(1,700) 
@@ -10,25 +10,19 @@ def prm(name):
                 179,181,191,193,197,199,211,223,227,229,233,239,241,251,257,263,269,271,277,281,283,293,307,311,313,317,331,337,347,349,353,359,367,373,
                 379,383,389,397,401,409,419,421,431,433,439,443,449,457,461,463,467,479,487,491,499,503,509,521,523,541,547,557,563,569,571,577,587,593,	
                 599,601,607,613,617,619,631,641,643,647,653,659,661,673,677,683,691,701]
-        if n in lst:
-            status = True
-        else:
-            status = False	
         print('\nQuestion: ' , n)
         ans = prompt.string('\nYour answer: ')
-        if  (ans.lower() == 'yes' and status == True) or (ans.lower() == 'no' and status == False):
+        if n in lst and ans.lower() == 'yes' or (n not in lst and ans.lower() == 'no') :
             print('Correct!')
             i += 1
-        elif ans.lower() == 'yes' and status == False:
-            print("\n'yes' is wrong answer ;(. Correct answer was 'no'. \nLet's try again," + name + "!")
+        elif n in lst and ans.lower() == 'no':
+            print("\n" + ans.upper() + " - is wrong answer ;(. Correct answer was 'YES'. \nLet's try again," + name + "!")
             exit()
-        elif ans.lower() == 'no' and status == True:
-            print("\n'no' is wrong answer ;(. Correct answer was 'yes'. \nLet's try again," + name + "!")
+        elif not n in lst and ans.lower() == 'yes':
+            print("\n" + ans.upper() + " - is wrong answer ;(. Correct answer was 'NO'. \nLet's try again," + name + "!")
             exit()
         elif ans.lower() != 'no' or ans.lower() != 'yes':
-            print('incorrectly typed response. Let\'s try again, '+ name + '!')
+            print('\n' + ans.upper() + ' - incorrectly typed response. Let\'s try again, '+ name + '!')
             exit()
     if i == 3:
         print('Congratulations, ' + name + '!')
-    else:
-        exit()

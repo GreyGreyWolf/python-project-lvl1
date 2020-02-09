@@ -1,4 +1,4 @@
-from brain_games.games.Gcd import nod
+from brain_games.games.Gcd import nod_num
 import prompt
 
 
@@ -7,7 +7,7 @@ def main():
     print('Find the greatest common divisor of given numbers')
     name = prompt.string('\n\nMay I have your name? ')
     print('Hello, ' + name + ' !')
-    nod(name)
+    nod_num(name)
 
 
 if __name__ == '__main__':
