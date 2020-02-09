@@ -4,4 +4,4 @@ def main():
     engine.engine(games.progression)
 
 if __name__ == '__main__':
-	main()      
+	main()  
