@@ -12,6 +12,7 @@ def prime_main():
 def gcd_main():
     engine.engine(games.gcd)
 
+
 def questions_main():
     engine.engine(games.questions)
 
