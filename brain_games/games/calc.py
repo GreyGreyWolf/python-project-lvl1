@@ -3,13 +3,13 @@ from operator import mul, sub, add
 
 task = 'What is the result of the expression?'
 
-lst = ((add, '+'), (sub, '-'), (mul, '*'))
+OPERATORS = ((add, '+'), (sub, '-'), (mul, '*'))
 
 
-def gen():
+def generation():
     num1 = random.randint(1, 15)
     num2 = random.randint(1, 15)
-    operation, sym = random.choice(lst)
-    escn_qst = '{} {} {}'.format(num1, sym, num2)
-    ans = str(operation(num1, num2))
-    return escn_qst, ans
+    operation, sym = random.choice(OPERATORS)
+    question = '{} {} {}'.format(num1, sym, num2)
+    answer = str(operation(num1, num2))
+    return question, answer

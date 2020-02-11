@@ -1,17 +1,24 @@
 import random
-from fractions import gcd
 
 task = 'Find the greatest common divisor of given numbers.'
 
 
-def nod_num(num1, num2):
-    res = gcd(num1, num2)
-    return res
+def check_gcd(x, y):
+    w = [x, y]
+    w.sort()
+    a, b = w
+    if b % a == 0:
+        return a
+    i = a
+    while i >= 1:
+        if b % i == 0 and a % i == 0:
+            return i
+        i -= 1
 
 
-def gen():
+def generation():
     num1 = random.randint(1, 50)
     num2 = random.randint(1, 50)
-    escn_qst = '{} AND {}'.format(num1, num2)
-    ans = str(nod_num(num1, num2))
-    return escn_qst, ans
+    question = '{} AND {}'.format(num1, num2)
+    answer = str(check_gcd(num1, num2))
+    return question, answer

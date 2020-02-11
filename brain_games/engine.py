@@ -1,21 +1,27 @@
-from brain_games.salute import salute_user
 import prompt
-from sys import exit
+
+
+def salute_user(module):
+    print("Welcome to the Brain Games!")
+    print(module.task)
+    name = prompt.string('\n\nMay I have your name? ')
+    print('Hello, {}! '.format(name))
+    return name
 
 
 def engine(module):
     name = salute_user(module)
     i = 0
     while i < 3:
-        escn_qst, result = module.gen()
-        print('\nQuestion: {}'.format(escn_qst))
-        ans = prompt.string('\nYour answer: ')
-        if ans.upper() == result:
-            print('Correct!')
-            i += 1
-        else:
-            print("\n'{}' <--- is wrong answer ;(.Correct answer was '{}'."
-                  "\nLet's try again, {}!".format(ans.upper(), result, name))
-            exit()
-    if i == 3:
+        question, result = module.generation()
+        print('\nQuestion: {}'.format(question))
+        answer = prompt.string('\nYour answer: ')
+        if answer.upper() != result:
+            print()
+            print("'{}' <--- is wrong answer ;(.Correct answer was '{}'."
+                  "Let's try again, {}!".format(answer.upper(), result, name))
+            break
+        print('Correct!')
+        i += 1
+    else:
         print('Congratulations, {}!'.format(name))
