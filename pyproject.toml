@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "GreyWolf_Brain_Games"
-version = "0.1.7"
+version = "0.1.8"
 description = "Simple Game"
 authors = ["GreyGreyWolf <wolfdieattheend@yandex.ru>"]
 packages = [

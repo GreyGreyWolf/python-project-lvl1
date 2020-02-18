@@ -2,7 +2,7 @@ from brain_games import games, engine
 
 
 def gcd_main():
-    engine.engine(games.gcd)
+    engine.start(games.gcd)
 
 
 if __name__ == '__main__':

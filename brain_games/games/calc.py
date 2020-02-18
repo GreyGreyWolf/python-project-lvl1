@@ -6,7 +6,7 @@ task = 'What is the result of the expression?'
 OPERATORS = ((add, '+'), (sub, '-'), (mul, '*'))
 
 
-def generation():
+def new_round():
     num1 = random.randint(1, 15)
     num2 = random.randint(1, 15)
     operation, sym = random.choice(OPERATORS)

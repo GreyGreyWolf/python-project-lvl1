@@ -10,7 +10,7 @@ def question_even(a):
         return "NO"
 
 
-def generation():
+def new_round():
     question = random.randint(1, 50)
     answer = question_even(question)
     return question, answer

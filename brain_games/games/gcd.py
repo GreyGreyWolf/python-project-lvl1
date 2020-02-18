@@ -16,7 +16,7 @@ def check_gcd(x, y):
         i -= 1
 
 
-def generation():
+def new_round():
     num1 = random.randint(1, 50)
     num2 = random.randint(1, 50)
     question = '{} AND {}'.format(num1, num2)

@@ -2,7 +2,7 @@ from brain_games import games, engine
 
 
 def calc_main():
-    engine.engine(games.calc)
+    engine.start(games.calc)
 
 
 if __name__ == '__main__':

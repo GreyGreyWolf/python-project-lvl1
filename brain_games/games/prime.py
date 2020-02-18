@@ -15,7 +15,7 @@ def prime_check(num):
     return True
 
 
-def generation():
+def new_round():
     question = random.randint(1, 1000)
     answer = prime_check(question)
     if answer is True:

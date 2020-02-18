@@ -2,7 +2,7 @@ from brain_games import games, engine
 
 
 def prime_main():
-    engine.engine(games.prime)
+    engine.start(games.prime)
 
 
 if __name__ == '__main__':
